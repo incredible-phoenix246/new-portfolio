@@ -1,0 +1,41 @@
+https://github.com/incredible-phoenix246
+
+https://twitter.com/phoeniex246?t=tJKoYj6q1EVU3D_Lxjprpw&s=09
+
+https://www.linkedin.com/in/ayomikun-araoye-a2485b287
+
+https://suspicious-spence.3-108-213-67.plesk.page/index.php
+
+
+
+Certainly! You can create a simple HTML file with inline styling for the button to make it blue and add JavaScript to trigger the download. Here's an example:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download PDF</title>
+</head>
+<body>
+    <button id="downloadButton" style="background-color: blue; color: white; padding: 10px 20px; border: none; cursor: pointer;">Download My Resume</button>
+    
+    <script>
+        document.getElementById("downloadButton").addEventListener("click", function () {
+            // Create an anchor element
+            const anchor = document.createElement("a");
+
+            // Set the href and download attributes
+            anchor.href = "My%20resume.pdf"; // Replace with the actual path to your PDF file
+            anchor.download = "My resume.pdf";
+
+            // Simulate a click to trigger the download
+            anchor.click();
+        });
+    </script>
+</body>
+</html>
+```
+
+This HTML file contains the button with blue styling using inline CSS and JavaScript to trigger the download when the button is clicked. Make sure to adjust the `href` attribute in the JavaScript code to point to the correct PDF file path.
